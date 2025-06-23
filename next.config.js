@@ -8,9 +8,7 @@ const nextConfig = {
       'avatars.githubusercontent.com',
     ],
   },
-  experimental: {
-    serverActions: true,
-  },
+
   typescript: {
     ignoreBuildErrors: false,
   },

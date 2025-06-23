@@ -6,7 +6,7 @@ import { Providers } from '@/providers/query-provider';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
-const inter = Inter({ subsets: ['latin'] });
+// const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Amazon Clone - Online Shopping',
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={"dd"}>
         <ClerkProvider>
           <Providers>
             <div className="flex min-h-screen flex-col">
