@@ -1,8 +1,5 @@
-# Amazon Clone
 
-A full-featured e-commerce application built with Next.js, TypeScript, Tailwind CSS, and Prisma. This project replicates core Amazon functionality including product browsing, cart management, user authentication, and checkout process.
 
-## Features
 
 - 🛍️ **Product Browsing**: Browse products by category, search, and filter options
 - 🔍 **Product Details**: View detailed product information, specifications, and related products
@@ -13,7 +10,7 @@ A full-featured e-commerce application built with Next.js, TypeScript, Tailwind 
 - 🌙 **Dark Mode Support**: Toggle between light and dark themes
 - 📦 **Order Management**: View order history and track order status
 
-## Tech Stack
+
 
 - **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
 - **Authentication**: Clerk
@@ -24,9 +21,9 @@ A full-featured e-commerce application built with Next.js, TypeScript, Tailwind 
 - **Form Validation**: Zod
 - **UI Components**: Custom components with Radix UI primitives
 
-## Getting Started
 
-### Prerequisites
+
+
 
 - Node.js 18+ and npm/yarn
 - PostgreSQL database
@@ -53,16 +50,15 @@ yarn install
 
 3. Set up environment variables
 
-Copy the `.env.example` file to `.env` and fill in your credentials:
+.env bana or usme jo maine discord pe bejha hai vo copy paste karde
 
-```bash
-cp .env.example .env
-```
+
+
 
 4. Set up the database
 
 ```bash
-npx prisma migrate dev
+npx prisma migrate dev   // abhi ye nahi karna hai 
 npx prisma db seed
 ```
 
