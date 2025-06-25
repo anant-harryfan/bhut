@@ -264,7 +264,7 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
                 </div>
                 
                 <div className="relative z-10 flex items-center mb-6">
-                  <div className={`${order.status === 'processing' ? 'bg-yellow-500' : 'bg-green-500'} rounded-full h-8 w-8 flex items-center justify-center`}>
+                  <div className={`${ 'bg-green-500'} rounded-full h-8 w-8 flex items-center justify-center`}>
                     <Package className="h-5 w-5 text-white" />
                   </div>
                   <div className="ml-4">
