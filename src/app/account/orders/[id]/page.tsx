@@ -22,7 +22,7 @@ type OrderItem = {
 type OrderStatus = 'processing' | 'shipped' | 'delivered' | 'cancelled';  
   
 // Use either type or interface (don't mix both)  
-type Order {  
+type Order = {  
   id: string;  
   date: Date;  
   status: OrderStatus; // Now correctly references all statuses  
