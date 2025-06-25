@@ -272,7 +272,7 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
                   <div className="ml-4">
                     <p className="font-medium">Order Processed</p>
                     <p className="text-sm text-gray-500">
-                      {order.status === 'processing' ? 'In progress' : new Date(order.date.getTime() + 24 * 60 * 60 * 1000).toLocaleDateString()}
+                      { new Date(order.date.getTime() + 24 * 60 * 60 * 1000).toLocaleDateString()}
                     </p>
                   </div>
                 </div>
@@ -284,7 +284,7 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
                   <div className="ml-4">
                     <p className="font-medium">Order Shipped</p>
                     <p className="text-sm text-gray-500">
-                      {order.status === 'shipped' || order.status === 'delivered' ? new Date(order.date.getTime() + 2 * 24 * 60 * 60 * 1000).toLocaleDateString() : 'Pending'}
+                      { new Date(order.date.getTime() + 2 * 24 * 60 * 60 * 1000).toLocaleDateString() : 'Pending'}
                     </p>
                   </div>
                 </div>
@@ -296,7 +296,7 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
                   <div className="ml-4">
                     <p className="font-medium">Order Delivered</p>
                     <p className="text-sm text-gray-500">
-                      {order.status === 'delivered' ? new Date(order.date.getTime() + 5 * 24 * 60 * 60 * 1000).toLocaleDateString() : 'Pending'}
+                      { new Date(order.date.getTime() + 5 * 24 * 60 * 60 * 1000).toLocaleDateString()}
                     </p>
                   </div>
                 </div>
