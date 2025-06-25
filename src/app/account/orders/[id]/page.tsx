@@ -18,27 +18,29 @@ type OrderItem = {
   quantity: number;
   image: string;
 };
-
-type Order = {
-  id: string;
-  date: Date;
-  status: 'processing' | 'shipped' | 'delivered' | 'cancelled';
-  items: OrderItem[];
-  total: number;
-  shipping: number;
-  tax: number;
-  address: {
-    name: string;
-    street: string;
-    city: string;
-    state: string;
-    zip: string;
-    country: string;
-  };
-  paymentMethod: string;
-  trackingNumber?: string;
+// Single source of truth for statuses  
+type OrderStatus = 'processing' | 'shipped' | 'delivered' | 'cancelled';  
+  
+// Use either type or interface (don't mix both)  
+type Order {  
+  id: string;  
+  date: Date;  
+  status: OrderStatus; // Now correctly references all statuses  
+  items: OrderItem[];  
+  total: number;  
+  shipping: number;  
+  tax: number;  
+  address: {  
+    name: string;  
+    street: string;  
+    city: string;  
+    state: string;  
+    zip: string;  
+    country: string;  
+  };  
+  paymentMethod: string;  
+  trackingNumber?: string;  
 };
-
 // Mock data function - in a real app, this would fetch from an API
 const getMockOrder = (id: string): Order => {
   return {
