@@ -165,9 +165,10 @@ export default function OrderDetailsPage({ params }: { params: { id: string } })
             </p>
           </div>
           <div className="mt-2 md:mt-0">
-            <span className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(order.status)}`}>
-              {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
-            </span>
+ // Replace the inline ternary with:  
+<span className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(order.status)}`}>  
+  {order.status.charAt(0).toUpperCase() + order.status.slice(1)}  
+</span>
           </div>
         </div>
       </div>
